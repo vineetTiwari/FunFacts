@@ -30,7 +30,7 @@
 		961CE9721ABA9450007EE264 /* FunFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		961CE9761ABA9450007EE264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		961CE9771ABA9450007EE264 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		961CE9791ABA9450007EE264 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		961CE9791ABA9450007EE264 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		961CE97A1ABA9450007EE264 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		961CE97C1ABA9450007EE264 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		961CE97D1ABA9450007EE264 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -68,6 +68,7 @@
 				961CE9731ABA9450007EE264 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		961CE9731ABA9450007EE264 /* Products */ = {
 			isa = PBXGroup;
