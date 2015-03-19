@@ -14,6 +14,7 @@
 		961CE9831ABA9450007EE264 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961CE9821ABA9450007EE264 /* Images.xcassets */; };
 		961CE9861ABA9450007EE264 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961CE9841ABA9450007EE264 /* LaunchScreen.xib */; };
 		961CE9921ABA9450007EE264 /* FunFactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 961CE9911ABA9450007EE264 /* FunFactsTests.m */; };
+		961CE99D1ABAC92E007EE264 /* FactBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 961CE99C1ABAC92E007EE264 /* FactBook.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		961CE98B1ABA9450007EE264 /* FunFactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunFactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		961CE9901ABA9450007EE264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		961CE9911ABA9450007EE264 /* FunFactsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunFactsTests.m; sourceTree = "<group>"; };
+		961CE99B1ABAC92E007EE264 /* FactBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FactBook.h; path = ../FactBook.h; sourceTree = "<group>"; };
+		961CE99C1ABAC92E007EE264 /* FactBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FactBook.m; path = ../FactBook.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				961CE97A1ABA9450007EE264 /* AppDelegate.m */,
 				961CE97C1ABA9450007EE264 /* ViewController.h */,
 				961CE97D1ABA9450007EE264 /* ViewController.m */,
+				961CE99B1ABAC92E007EE264 /* FactBook.h */,
+				961CE99C1ABAC92E007EE264 /* FactBook.m */,
 				961CE97F1ABA9450007EE264 /* Main.storyboard */,
 				961CE9821ABA9450007EE264 /* Images.xcassets */,
 				961CE9841ABA9450007EE264 /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 			files = (
 				961CE97E1ABA9450007EE264 /* ViewController.m in Sources */,
 				961CE97B1ABA9450007EE264 /* AppDelegate.m in Sources */,
+				961CE99D1ABAC92E007EE264 /* FactBook.m in Sources */,
 				961CE9781ABA9450007EE264 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
