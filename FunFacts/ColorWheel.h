@@ -1,5 +1,5 @@
 //
-//  FactBook.h
+//  ColorWheel.h
 //  FunFacts
 //
 //  Created by Vineet Tiwari on 2015-03-19.
@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface FactBook : NSObject
+@interface ColorWheel : NSObject
 
-@property (strong, nonatomic) NSArray *facts;
+@property (nonatomic, strong) NSArray *colors;
 
--(NSString *)randomFact;
+- (UIColor *)randomColor;
 
 @end

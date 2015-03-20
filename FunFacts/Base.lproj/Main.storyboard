@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,31 +17,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nyv-Wn-FdU">
-                                <rect key="frame" x="70" y="269" width="180" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An interesting fact goes here" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9Z-zn-4nK">
+                                <rect key="frame" x="48" y="182" width="225" height="45"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.070884627525252486" green="0.070884627525252486" blue="0.070884627525252486" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngx-Q0-dhZ">
+                                <rect key="frame" x="52" y="60" width="116" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="cJp-cO-M5I"/>
+                                    <constraint firstAttribute="width" constant="116" id="dnO-Y5-jtr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GlR-ZY-OsN">
+                                <rect key="frame" x="70" y="444" width="180" height="30"/>
+                                <color key="backgroundColor" red="0.99481139519999995" green="0.99481139519999995" blue="0.99481139519999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="2JX-EC-JAw"/>
+                                    <constraint firstAttribute="height" constant="30" id="b0x-Ya-pbn"/>
+                                </constraints>
                                 <state key="normal" title="Show Another Fun Fact">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="showFunFact" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7PA-cD-VXf"/>
+                                    <action selector="showFunFact:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JBE-OZ-ml8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="An interesting fact goes here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9Z-zn-4nK">
-                                <rect key="frame" x="16" y="141" width="288" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.42352941176470588" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.94333964646464641" green="0.40141231695851037" blue="0.28698962418951174" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="I9Z-zn-4nK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="32" id="3ZO-B4-1lf"/>
+                            <constraint firstItem="Ngx-Q0-dhZ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="40" id="7sR-eX-wNE"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="GlR-ZY-OsN" secondAttribute="bottom" constant="94" id="CJV-bb-mZD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="I9Z-zn-4nK" secondAttribute="trailing" constant="31" id="Ce3-MY-ekF"/>
+                            <constraint firstItem="Ngx-Q0-dhZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="36" id="DkU-2Q-Ceo"/>
+                            <constraint firstAttribute="centerY" secondItem="I9Z-zn-4nK" secondAttribute="centerY" constant="79.5" id="NL4-69-qv1"/>
+                            <constraint firstItem="GlR-ZY-OsN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="54" id="UQB-VY-IWw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GlR-ZY-OsN" secondAttribute="trailing" constant="54" id="v6Y-3y-PF0"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="funFactButton" destination="GlR-ZY-OsN" id="N0y-rA-2Sc"/>
                         <outlet property="funFactLabel" destination="I9Z-zn-4nK" id="3lW-xm-A9i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130" y="319"/>
+            <point key="canvasLocation" x="139" y="278"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
